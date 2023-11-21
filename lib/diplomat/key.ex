@@ -42,7 +42,7 @@ defmodule Diplomat.Key do
   def new(kind, id) when is_integer(id),
     do: %__MODULE__{kind: kind, id: id}
 
-  @doc "Creates a new `Diplomat.Key` form a kind and a name"
+  #doc "Creates a new `Diplomat.Key` form a kind and a name"
   def new(kind, name),
     do: %__MODULE__{kind: kind, name: name}
 

@@ -24,9 +24,10 @@ defmodule Diplomat.Mixfile do
 
   defp deps do
     [
+      {:gpb, "~> 4.20", override: true},
       {:goth, "~> 1.0"},
-      {:exprotobuf, "~> 1.2"},
-      {:httpoison, "~> 1.0"},
+      {:exprotobuf, github: "lax-os/exprotobuf", branch: "master"},
+      {:httpoison, "~> 1.2"},
       {:jason, "~> 1.1"},
       {:credo, "~> 1.0", only: [:dev, :test]},
       {:bypass, "~> 0.8", only: :test},

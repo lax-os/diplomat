@@ -1,5 +1,5 @@
 defmodule KeyUtils do
-  use Bitwise
+  import Bitwise
   alias Diplomat.Key
 
   @spec urlsafe(Key.t()) :: String.t()
